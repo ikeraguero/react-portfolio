@@ -1,13 +1,430 @@
-body {
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+  color: #2d2e32;
+  z-index: 100;
+  scroll-behavior: smooth;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html,
+body {
+  overflow-x: hidden;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  width: 110rem;
+  align-items: center;
+}
+
+section:not(:first-child) {
+  margin-top: 9.6rem;
+}
+
+section:last-child {
+  margin-bottom: 9.6rem;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+  background-color: #f9f9f9;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.8rem;
+  padding: 3.8rem 4.2rem 3.8rem 4.2rem;
+  font-weight: 600;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
+  z-index: 200;
+}
+
+.nav a:link,
+.nav a:visited,
+.nav a:hover,
+.nav a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+.nav-name {
+  font-weight: 700;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 3.2rem;
+}
+
+.hero-section {
+  display: flex;
+  justify-content: center;
+  padding: 9.6rem;
+  height: 100vh;
+  background-color: #f9f9f9;
+}
+
+.hero-features {
+  display: flex;
+  gap: 20.6rem;
+  flex: 0;
+  height: 60vh;
+}
+
+.text-logos a:link,
+.text-logos a:visited {
+  color: #2d2e32;
+  transition: 0.2s all;
+}
+
+.text-logos a:hover,
+.text-logos a:active,
+.nav-list a:hover,
+.nav-list a:active {
+  color: #147efb;
+
+  transition: 0.2s all;
+}
+
+.text {
+  align-self: center;
+  color: #2d2e32;
+  font-size: 3.8rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-title {
+  font-weight: 800;
+  font-size: 4.8rem;
+  line-height: 1;
+  margin-bottom: 2.4rem;
+}
+
+.text-description {
+  font-size: 1.8rem;
+  color: #555;
+  margin-bottom: 0.2rem;
+  font-weight: 400;
+}
+
+.text-logos {
+  display: flex;
+  gap: 1.4rem;
+}
+
+.logo {
+  height: 3.2rem;
+  width: 3.2rem;
+}
+
+.hero-photo {
+  width: 34.8rem;
+  height: 34.8rem;
+  border-radius: 9999999px;
+  border: 2px #2d2e32 solid;
+}
+
+.photo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-features {
+  display: flex;
+  align-items: center;
+  gap: 6.4rem;
+}
+
+.about-photo img {
+  border-radius: 9px;
+}
+
+.about-text h3,
+.about-text p,
+.projects-text {
+  font-size: 1.4rem;
+}
+
+h4 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  color: #147efb;
+}
+
+.about-text p {
+  color: #888;
+  font-weight: 500;
+}
+
+.contact-title h3 {
+  font-size: 1.4rem;
+}
+
+.icon-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.icon-text:first-child {
+  font-weight: 800;
+}
+
+.icon-container,
+.contact-icons {
+  display: flex;
+  font-size: 1.6rem;
+}
+
+.contact-icons {
+  margin-top: 2.4rem;
+  gap: 5.4rem;
+}
+
+.icon-container {
+  gap: 2rem;
+  align-items: center;
+}
+
+.contact-icon-text {
+  font-weight: 700;
+}
+
+.contact-icons-color {
+  color: #147efb;
+  padding: 1.2rem;
+  border-radius: 99999px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
+}
+
+.project {
+  margin-top: 3.6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 9px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
+}
+
+.project-text {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.project-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.project-description {
+  color: #888;
+  font-weight: 500;
+  font-size: 1.4rem;
+  padding: 0 6.4rem 0 6.4rem;
+}
+
+.project-stack {
+  display: flex;
+}
+
+.stack-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2.6rem;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.project-links {
+  display: flex;
+  justify-content: center;
+  gap: 2.6rem;
+}
+
+.project-links a:link,
+.project-links a:visited {
+  color: #2d2e32;
+  text-decoration: none;
+}
+
+.project-links a span {
+  font-size: 1.4rem;
+}
+
+.logo-project {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.project:not(:first-child) {
+  margin-top: 8.4rem;
+}
+
+.section {
+  transition: transform 1s, opacity 1s;
+}
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
+@media (max-width: 71em) {
+  html {
+    font-size: 55%;
+  }
+  .project-text {
+    gap: 1.2rem;
+  }
+  .about-features {
+    flex-direction: column;
+  }
+  .project {
+    grid-template-columns: 1fr;
+  }
+
+  .project-list {
+    display: grid;
+    grid-template-rows: 2;
+  }
+  .project-text {
+    margin-top: 3.6rem;
+    grid-area: 2;
+  }
+}
+
+@media (max-width: 63em) {
+  .hero-features {
+    gap: 4rem;
+  }
+  html {
+    font-size: 45%;
+  }
+}
+
+@media (max-width: 40em) {
+  .laptop-img {
+    width: 85%;
+  }
+}
+
+@media (max-width: 51em) {
+  .hero-features {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .photo {
+    grid-area: 1;
+    display: flex;
+    align-items: center;
+  }
+  .text-logos {
+    justify-content: center;
+    gap: 3.2rem;
+  }
+  .text {
+    text-align: center;
+  }
+  .hero-section {
+    padding: 9.6rem 9.6rem 2.4rem 9.6rem;
+  }
+  .container {
+    padding: 9.6rem 6.4rem 2.4rem 6.4rem;
+  }
+  section {
+    text-align: center;
+  }
+  .contact-icons {
+    justify-content: space-around;
+  }
+  .about-text p {
+    margin-top: 1.2rem;
+  }
+  section:not(:first-child) {
+    margin-top: 1.8rem;
+  }
+  .container {
+    width: 80rem !important;
+  }
+}
+
+@media (max-width: 45em) {
+  .img {
+    width: 80% !important;
+  }
+}
+
+@media (max-width: 43em) {
+  html {
+    font-size: 50%;
+  }
+  .nav-list {
+    display: none;
+  }
+  .laptop-img {
+    display: none;
+  }
+  .text {
+    align-self: flex-start;
+  }
+  .photo {
+    align-self: flex-end;
+    padding: 2.8rem;
+  }
+  .hero-features {
+    gap: 0rem;
+  }
+  .about-section {
+    padding: 0 6.4rem 2.4rem 6.4rem !important;
+  }
+}
+@media (max-width: 40em) {
+  html {
+    font-size: 45%;
+  }
+  .container {
+    width: 68rem !important;
+  }
+  .contact-icons {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .icon-container {
+    justify-content: center;
+  }
+  .logo {
+    display: none;
+  }
+}
+@media (max-width: 34em) {
+  .about-text p {
+    padding: 0 4.8rem 0 4.8rem;
+  }
 }
