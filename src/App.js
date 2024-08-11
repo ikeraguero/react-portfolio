@@ -1,11 +1,13 @@
 import NavBar from "./components/NavBar";
+import HeroSection from "./components/HeaderContent";
 function App() {
   return (
-    <div className="App">
+    <body>
       <header>
         <NavBar />
+        <HeroSection />
       </header>
-    </div>
+    </body>
   );
 }
 
