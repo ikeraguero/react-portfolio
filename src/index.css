@@ -251,6 +251,7 @@ h3 {
 
 .project-stack {
   display: flex;
+  justify-content: center;
 }
 
 .stack-list {

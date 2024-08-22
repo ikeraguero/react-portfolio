@@ -2,12 +2,12 @@ import photo from "../img/laptop.png";
 
 export default function About() {
   return (
-    <section class="section about-section container " id="about-section">
-      <div class="about-features">
-        <div class="about-photo">
-          <img src={photo} alt="" class="img laptop-img" />
+    <section className="section about-section container " id="about-section">
+      <div className="about-features">
+        <div className="about-photo">
+          <img src={photo} alt="" className="img laptop-img" />
         </div>
-        <div class="about-text">
+        <div className="about-text">
           <h3>SOBRE MIM</h3>
           <h4>Desenvolvedor Web em Joinville, SC 📍</h4>
           <p>
