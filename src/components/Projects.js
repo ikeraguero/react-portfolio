@@ -1,6 +1,21 @@
 import project1 from "../img/project1.png";
 import project2 from "../img/project2.png";
 
+const projects = [
+  {
+    name: "Childcare Brasil",
+    description:
+      "Plataforma desenvolvida para uma organização beneficente fictícia. Nela, é possível realizar doações em dinheiro para crianças e escolas carentes de todo o Brasil. O website oferece uma interface que, além de realizar doações, possibilita cadastrar, remover e editar crianças e escolas através da conta administradora.",
+    stack: ["vue", "node", "express", "mongoDB"],
+  },
+  {
+    name: "Fitmap",
+    description:
+      "Plataforma que possibilita o usuário acompanhar e registrar sua rotina de exercícios feitos em uma determinada região, possibilitando que adicione marcadores ao mapa de sua localidade atual renderizada utilizando a API Geolocation e a biblioteca Leaflet.",
+    stack: ["javascript vanilla", "poo"],
+  },
+];
+
 export default function Projects() {
   return (
     <section
