@@ -9,6 +9,8 @@ const projects = [
       "Plataforma desenvolvida para uma organização beneficente fictícia. Nela, é possível realizar doações em dinheiro para crianças e escolas carentes de todo o Brasil. O website oferece uma interface que, além de realizar doações, possibilita cadastrar, remover e editar crianças e escolas através da conta administradora.",
     stack: ["Vue", "Node", "Express", "MongoDB"],
     image: project1,
+    repository: "https://github.com/ikeraguero/childcare-brasil",
+    deploy: "https://childcarebrasil.netlify.app/",
   },
   {
     name: "Fitmap 🗺️",
@@ -17,6 +19,8 @@ const projects = [
       "Plataforma que possibilita o usuário acompanhar e registrar sua rotina de exercícios feitos em uma determinada região, possibilitando que adicione marcadores ao mapa de sua localidade atual renderizada utilizando a API Geolocation e a biblioteca Leaflet.",
     stack: ["JavaScript Vanilla", "POO"],
     image: project2,
+    repository: "https://github.com/ikeraguero/fitmap",
+    deploy: "https://ikeraguero-fitmap.netlify.app/",
   },
 ];
 
@@ -35,6 +39,8 @@ export default function Projects() {
             description={project.description}
             stack={project.stack}
             image={project.image}
+            repo={project.repository}
+            deploy={project.deploy}
             direction={project.descPostion}
           />
         ))}
@@ -43,7 +49,15 @@ export default function Projects() {
   );
 }
 
-function Project({ name, description, stack, image, direction }) {
+function Project({
+  name,
+  description,
+  stack,
+  image,
+  repository,
+  deploy,
+  direction,
+}) {
   return (
     <div className="project">
       {direction === "right" ? (
@@ -62,17 +76,14 @@ function Project({ name, description, stack, image, direction }) {
               </ul>
             </p>
             <div className="project-links">
-              <a
-                href="https://github.com/ikeraguero/childcare-brasil"
-                target="_blank"
-              >
+              <a href={repository} target="_blank">
                 <ion-icon
                   name="logo-github"
                   className="logo-project"
                 ></ion-icon>
                 <span>Github</span>
               </a>
-              <a href="https://childcarebrasil.netlify.app/" target="_blank">
+              <a href={deploy} target="_blank">
                 <ion-icon name="create-outline"></ion-icon>
                 <span>Deploy</span>
               </a>
@@ -92,17 +103,14 @@ function Project({ name, description, stack, image, direction }) {
               </ul>
             </p>
             <div className="project-links">
-              <a
-                href="https://github.com/ikeraguero/childcare-brasil"
-                target="_blank"
-              >
+              <a href={repository} target="_blank">
                 <ion-icon
                   name="logo-github"
                   className="logo-project"
                 ></ion-icon>
                 <span>Github</span>
               </a>
-              <a href="https://childcarebrasil.netlify.app/" target="_blank">
+              <a href={deploy} target="_blank">
                 <ion-icon name="create-outline"></ion-icon>
                 <span>Deploy</span>
               </a>
