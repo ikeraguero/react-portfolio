@@ -81,11 +81,11 @@ function Project({
                   name="logo-github"
                   className="logo-project"
                 ></ion-icon>
-                <span>Github</span>
+                <span> Github</span>
               </a>
               <a href={deploy} target="_blank">
                 <ion-icon name="create-outline"></ion-icon>
-                <span>Deploy</span>
+                <span> Deploy</span>
               </a>
             </div>
           </div>
@@ -108,11 +108,11 @@ function Project({
                   name="logo-github"
                   className="logo-project"
                 ></ion-icon>
-                <span>Github</span>
+                <span> Github</span>
               </a>
               <a href={deploy} target="_blank">
                 <ion-icon name="create-outline"></ion-icon>
-                <span>Deploy</span>
+                <span> Deploy</span>
               </a>
             </div>
           </div>

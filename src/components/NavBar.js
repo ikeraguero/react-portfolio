@@ -1,6 +1,8 @@
-export default function NavBar() {
+import { forwardRef } from "react";
+
+const NavBar = forwardRef((props, ref) => {
   return (
-    <nav className="nav">
+    <nav ref={ref} className="nav">
       <div className="nav-name">
         <span>Iker Aguero Pires</span>
       </div>
@@ -28,4 +30,6 @@ export default function NavBar() {
       </ul>
     </nav>
   );
-}
+});
+
+export default NavBar;
