@@ -39,7 +39,7 @@ export default function Projects() {
             description={project.description}
             stack={project.stack}
             image={project.image}
-            repo={project.repository}
+            repository={project.repository}
             deploy={project.deploy}
             direction={project.descPostion}
           />
