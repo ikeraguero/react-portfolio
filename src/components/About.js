@@ -11,11 +11,10 @@ export default function About() {
           <h3>SOBRE MIM</h3>
           <h4>Desenvolvedor Web em Joinville, SC 📍</h4>
           <p>
-            Olá, me chamo Iker Aguero Pires, tenho 19 anos, sou formado Técnico
+            Olá, me chamo Iker Aguero Pires, tenho 20 anos, sou formado Técnico
             em Informática pelo IFC e atualmente sou estudante de Análise e
-            Desenvolvimento de Sistemas na UDESC. Sou apaixonado por tecnologia
-            e conhecimento e estou em busca da minha primeira experiência
-            profissional na área!
+            Desenvolvimento de Sistemas na UDESC. Atualmente atuo como
+            Estagiário de Desenvolvimento de Software na SoftExpert Software.
             <br />
             <br />
             Minha principal motivação é aprender e evoluir mais a cada dia para
